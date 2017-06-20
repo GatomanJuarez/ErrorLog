@@ -1,0 +1,48 @@
+﻿Data Time:20/06/2017 08:31:30 a. m.
+Message :Host 'DESKTOP-UTR34VA' is not allowed to connect to this MySQL server<br/>
+StackTrace :   en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en ErrorLog.Form1.guardarPalabras() en C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\Form1.cs:línea 34
+
+
+-----------------------------------------------------------------------------  :(
+
+Data Time:20/06/2017 08:33:42 a. m.
+Message :Host 'DESKTOP-UTR34VA' is not allowed to connect to this MySQL server<br/>
+StackTrace :   en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en ErrorLog.Form1.guardarPalabras() en C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\Form1.cs:línea 34
+
+
+-----------------------------------------------------------------------------  :(
+
+Data Time:20/06/2017 08:34:57 a. m.
+Message :Host 'DESKTOP-UTR34VA' is not allowed to connect to this MySQL server<br/>
+StackTrace :   en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en ErrorLog.Form1.guardarPalabras() en C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\Form1.cs:línea 35
+
+
+-----------------------------------------------------------------------------  :(
+

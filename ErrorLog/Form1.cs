@@ -18,96 +18,54 @@ namespace ErrorLog
         public Form1()
         {
             InitializeComponent();
+            guardarPalabras();
+            mostrar();
         }
 
         MySqlConnection Cnn = new MySqlConnection();
         List<String> lista = new List<string>();
+        MySqlCommand myCmd;
+        MySqlDataReader myReaader;
+       
 
-        public void LogFile(string error)
-
-        {
-
-            StreamWriter log;
-
-            if (!File.Exists("logfile.txt"))
-
-            {
-
-                log = new StreamWriter("logfile.txt");
-
-            }
-
-            else
-
-            {
-
-                log = File.AppendText("logfile.txt");
-
-            }
-
-            // Write to the file:
-
-            log.WriteLine("Data Time:" + DateTime.Now);
-
-            log.WriteLine("Exception Name:" + error);
-
-
-
-
-
-            log.Close();
-
-        }
-
-        private void guardarPalabra()
+        private void guardarPalabras()
         {
             try
             {
-                Cnn.ConnectionString = "Server = localhost; Database = conjuntosYo; User Id = root; Password =; ";
+                Cnn.Open();
+                myCmd = new MySqlCommand("select * from palabras");
+                myCmd.Connection = Cnn;
+                myReaader = myCmd.ExecuteReader();
+                while (myReaader.Read())
+                {
+                    //Sigue leyendo la tabla
+                    myReaader.Read();
+                    //Busca una la columna la convierte en string y la almacena en una variable
+                    lista.Add(myReaader["palabra"].ToString());
+                    //La ruta le cambiamos la direccion de las diagonales y le ponemos dos en vez de uno             
+                }
+                Cnn.Close();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-               LogFile(e.ToString ());
+                MessageBox.Show("Ha ocurrido un error al leer la tabla. :(", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string filePath = @"Error.txt";
+                using (StreamWriter log = new StreamWriter(filePath, true))
+                {
+                    log.WriteLine("Data Time:" + DateTime.Now);
+                    log.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
+                       "" + Environment.NewLine);
+                    log.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------  :(" + Environment.NewLine);
+                }
             }
         }
-
-
-
-        private void btnGuardar_Click(object sender, EventArgs e)
+        
+        private void mostrar()
         {
-            guardarPalabra();
-        }
-    }
-
-    public static class ExceptionHelper
-
-    {
-
-        public static int LineNumber(this Exception e)
-
-        {
-
-            int linenum = 0;
-
-            try
-
+            foreach (string pala in lista)
             {
-
-                linenum = Convert.ToInt32(e.StackTrace.Substring(e.StackTrace.LastIndexOf(":line") + 5));
-
+                label1.Text += pala + "\n";
             }
-
-            catch
-
-            {
-
-                //Stack trace is not available!
-
-            }
-
-            return linenum;
-
         }
-
     }
 }

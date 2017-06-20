@@ -9,3 +9,14 @@ C:\Users\jeobal\Desktop\Programing\Freedom\ErrorLog\ErrorLog\obj\Debug\ErrorLog.
 C:\Users\jeobal\Desktop\Programing\Freedom\ErrorLog\ErrorLog\obj\Debug\ErrorLog.csprojResolveAssemblyReference.cache
 C:\Users\jeobal\Desktop\Programing\Freedom\ErrorLog\ErrorLog\bin\Debug\MySql.Data.dll
 C:\Users\jeobal\Desktop\Programing\Freedom\ErrorLog\ErrorLog\bin\Debug\MySql.Data.xml
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\bin\Debug\ErrorLog.exe.config
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\obj\Debug\ErrorLog.exe
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\obj\Debug\ErrorLog.pdb
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\bin\Debug\ErrorLog.exe
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\bin\Debug\ErrorLog.pdb
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\bin\Debug\MySql.Data.dll
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\bin\Debug\MySql.Data.xml
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\obj\Debug\ErrorLog.csprojResolveAssemblyReference.cache
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\obj\Debug\ErrorLog.Form1.resources
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\obj\Debug\ErrorLog.Properties.Resources.resources
+C:\Users\jeobal\Desktop\Programming\Freedom\ErrorLog\ErrorLog\obj\Debug\ErrorLog.csproj.GenerateResource.Cache
